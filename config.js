@@ -37,7 +37,7 @@ global.flush = process.env.FLUSH   || "true"; // Make it "true" if bot not respo
 global.gdbye = process.env.GOODBYE || process.env.CAN_GOODBYE || "true"; 
 global.wlcm  = process.env.WELCOME || process.env.CAN_WELCOME || Math.floor(Math.random()*3)  === 1 ?  "true" : "true" ;  // Make it "false" for disable WELCOME 
 
-global.warncount = process.env.WARN_COUNT || 3
+global.warncount = process.env.WARN_COUNT || 2
 global.disablepm = process.env.DISABLE_PM || "false"
 global.disablegroup = process.env.DISABLE_GROUPS || "false", // disable bot in groups when public mode
 
@@ -47,16 +47,16 @@ global.waPresence= process.env.WAPRESENCE ||  "available" ; // 'unavailable' | '
 
 
 //========================= [ AUTO READ MSGS & CMDS ] =========================\\
-global.readcmds = process.env.READ_COMMAND || "no"
-global.readmessage = process.env.READ_MESSAGE || "no"
-global.readmessagefrom = process.env.READ_MESSAGE_FROM || "no,";
+global.readcmds = process.env.READ_COMMAND || "false"
+global.readmessage = process.env.READ_MESSAGE || "false"
+global.readmessagefrom = process.env.READ_MESSAGE_FROM || "false,";
 
 
 //========================= [ AUTO SAVE & READ STATUS ] =========================\\
-global.read_status = process.env.AUTO_READ_STATUS || "no"
-global.save_status = process.env.AUTO_SAVE_STATUS || "no"
-global.save_status_from =  process.env.SAVE_STATUS_FROM  || "no,";
-global.read_status_from =  process.env.READ_STATUS_FROM  ||  "no,";
+global.read_status = process.env.AUTO_READ_STATUS || "false"
+global.save_status = process.env.AUTO_SAVE_STATUS || "false"
+global.save_status_from =  process.env.SAVE_STATUS_FROM  || "false,";
+global.read_status_from =  process.env.READ_STATUS_FROM  ||  "false,";
 
 global.api_smd = "https://api-smd.onrender.com" //  || "https://api-smd-1.vercel.app" // expires
 global.scan = "https://suhail-md-vtsf.onrender.com";
